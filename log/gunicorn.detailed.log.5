@@ -1,0 +1,84 @@
+[2023-09-27 15:43:40,689] INFO 7 viagens encontradas - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L100 
+[2023-09-27 15:43:40,689] INFO 127.0.0.1 - - [27/Sep/2023 15:43:40] "GET /listaviagens HTTP/1.1" 200 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 15:44:02,541] WARNING Não foi possível adicionar viagem com uma cidade inválida 'Macae', Cidade não encontrada no cadastro do IBGE :/ - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L79  
+[2023-09-27 15:44:02,541] INFO 127.0.0.1 - - [27/Sep/2023 15:44:02] "[31m[1mPOST /nova_viagem HTTP/1.1[0m" 409 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 15:44:51,992] INFO Coletando viagem  - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L90  
+[2023-09-27 15:44:51,994] INFO 7 viagens encontradas - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L100 
+[2023-09-27 15:44:51,994] INFO 127.0.0.1 - - [27/Sep/2023 15:44:51] "GET /listaviagens HTTP/1.1" 200 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 15:45:11,262] INFO Adicionando viagem para a cidade: 'Penedo' - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L55  
+[2023-09-27 15:45:11,280] INFO Adicionado viagem: Product(id=10, cidade='Penedo', descricao=Cidade maravilhosa, qtd_dias=3,ano='2024',mes='Janeiro') - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L63  
+[2023-09-27 15:45:11,280] INFO 127.0.0.1 - - [27/Sep/2023 15:45:11] "POST /nova_viagem HTTP/1.1" 200 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 15:45:20,637] WARNING Não foi possível adicionar viagem com uma cidade inválida 'Lisboa', Cidade não encontrada no cadastro do IBGE :/ - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L79  
+[2023-09-27 15:45:20,637] INFO 127.0.0.1 - - [27/Sep/2023 15:45:20] "[31m[1mPOST /nova_viagem HTTP/1.1[0m" 409 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 15:45:46,580] INFO Atualizando os dados da viagem #1 - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L212 
+[2023-09-27 15:45:46,580] ERROR Exception on /atualiza_viagem [PUT] - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\engine\base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\engine\default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: viagem.cidade, viagem.ano, viagem.mes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\flask_openapi3\scaffold.py", line 273, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py", line 216, in atualiza_viagem
+    count = session.query(Viagem).filter(Viagem.id == viagem_id).update({ Viagem.cidade: form.cidade,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\orm\query.py", line 3297, in update
+    result = self.session.execute(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\sql\elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\engine\base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\engine\base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\engine\base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\sqlalchemy\engine\default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: viagem.cidade, viagem.ano, viagem.mes
+[SQL: UPDATE viagem SET cidade=?, descricao=?, qtd_dias=?, ano=?, mes=? WHERE viagem.pk_viagem = ?]
+[parameters: ('Rio de Janeiro', 'praias maravilhosas', 15, 2024, 'Janeiro', 1)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2023-09-27 15:45:46,614] INFO 127.0.0.1 - - [27/Sep/2023 15:45:46] "[35m[1mPUT /atualiza_viagem HTTP/1.1[0m" 500 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 15:48:31,026] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.156:5001 - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 15:48:31,026] INFO [33mPress CTRL+C to quit[0m - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 15:48:32,624] INFO 127.0.0.1 - - [27/Sep/2023 15:48:32] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 

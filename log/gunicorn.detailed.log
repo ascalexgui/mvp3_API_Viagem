@@ -1,0 +1,11 @@
+[2023-09-27 19:08:27,901] INFO Atualizando viagem #3 - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L226 
+[2023-09-27 19:08:27,913] INFO 127.0.0.1 - - [27/Sep/2023 19:08:27] "PUT /atualiza_viagem HTTP/1.1" 200 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 19:08:39,413] INFO Coletando dados sobre viagem #3 - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L113 
+[2023-09-27 19:08:39,415] INFO Viagem econtrada: Product(id=3, cidade='Gramado', descricao=alterada, qtd_dias=7,ano='2023',mes='Novembro') - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L125 
+[2023-09-27 19:08:39,415] INFO 127.0.0.1 - - [27/Sep/2023 19:08:39] "GET /busca_viagem_por_id?id=3 HTTP/1.1" 200 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 19:08:52,848] INFO Deletando dados sobre viagem #3 - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L138 
+[2023-09-27 19:08:52,850] INFO Deletado viagem #3 - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L147 
+[2023-09-27 19:08:52,850] INFO 127.0.0.1 - - [27/Sep/2023 19:08:52] "DELETE /deleta_viagem_por_id?id=3 HTTP/1.1" 200 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-27 19:08:58,721] INFO Coletando viagem  - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L90  
+[2023-09-27 19:08:58,723] INFO 3 viagens encontradas - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\app.py L100 
+[2023-09-27 19:08:58,723] INFO 127.0.0.1 - - [27/Sep/2023 19:08:58] "GET /listaviagens HTTP/1.1" 200 - - call_trace=C:\Users\cyl7\OneDrive - PETROBRAS\Documents\posgraduacao_PUC\sprint_03\MVP_Viagem_ASC\env\Lib\site-packages\werkzeug\_internal.py L187 
